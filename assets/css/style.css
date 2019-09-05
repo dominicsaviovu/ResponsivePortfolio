@@ -8,9 +8,20 @@ body {
 
 * {
   box-sizing: border-box;
+  margin: 0%
 }
 
 /* general */
+
+.wapper {
+  height: auto;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -100px;
+
+}
+
+
 
 .container {
   width: 100%;
@@ -94,6 +105,8 @@ nav a {
 
 nav a:first-child {
   border-left: 0 none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
 /* footer */
@@ -215,3 +228,20 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media only screen and (max-width:980px) {
+  nav {
+    margin-right: 5px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .main-section,
+  .sidebar {
+    max-width: 100%;
+  }
+
+  main {
+    overflow: auto;}
+  }
